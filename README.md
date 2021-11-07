@@ -1,3 +1,6 @@
+## How to setup
+sh setup.sh
+
 ## Time-domain Timbre Transformation
 
 The aim is to transfer timbre from one musical source to another musical source, but entirely in the time domain.
