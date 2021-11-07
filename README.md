@@ -1,5 +1,7 @@
 ## How to setup
+```bash
 sh setup.sh
+```
 
 ## Time-domain Timbre Transformation
 
