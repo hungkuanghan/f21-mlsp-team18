@@ -1,14 +1,6 @@
 import sys
 import librosa
-import os
 import numpy as np
-from pyAudioAnalysis import audioBasicIO
-from pyAudioAnalysis import ShortTermFeatures
-import matplotlib.pyplot as plt
-from sklearn import linear_model
-from tqdm import tqdm
-import pandas as pd
-from sklearn.decomposition import NMF
 
 def getMFCC(filepath):
     y, sr = librosa.load(filepath)
