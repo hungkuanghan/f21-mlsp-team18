@@ -1,3 +1,4 @@
+# coding=utf-8
 import matplotlib
 matplotlib.use('Agg')
 
@@ -10,10 +11,9 @@ import librosa
 
 
 if __name__ == '__main__':
-    src = sys[1]
-    desc = sys[2]
+    src = sys.argv[1]
+    desc = sys.argv[2]
 
-    filename = librosa.util.example_audio_file()
     y, sr = librosa.load(src)
     y = y[:100000] # shorten audio a bit for speed
 
@@ -28,5 +28,5 @@ if __name__ == '__main__':
     fig = plt.Figure()
     canvas = FigureCanvas(fig)
     ax = fig.add_subplot(111)
-    p = librosa.display.specshow(librosa.amplitude_to_db(out, ref=np.max), ax=ax, y_axis='log', x_axis='time')
+    p = librosa.display.specshow(librosa.amplitude_to_db(out, ref=np.max), ax=ax, y_axis="log", x_axis="time")
     fig.savefig(desc)
