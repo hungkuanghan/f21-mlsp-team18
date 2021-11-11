@@ -1,3 +1,5 @@
 nsynth-*
 __MACOSX/
 .DS_Store
+*.wav
+*.png

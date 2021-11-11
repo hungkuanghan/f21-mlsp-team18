@@ -8,5 +8,8 @@ unzip nsynth-training.zip
 unzip nsynth-valid.zip
 unzip nsynth-test.zip
 
+# Clean up
+rm -f *.zip
+
 # install necessary package
 pip install -r requirements.txt
