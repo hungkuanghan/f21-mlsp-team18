@@ -12,7 +12,7 @@ unzip nsynth-test.zip
 git clone https://github.com/k2kobayashi/sprocket.git
 
 # create necessary paths
-SPROCKET_WAV=./sprocket/example/data/wav/
+SPROCKET_WAV=./sprocket/example/data/wav
 NSYNTH_ADUIO=./nsynth-train/audio
 mkdir -p $SPROCKET_WAV/{ACOUSTIC,ELECTRONIC}
 cp $NSYNTH_ADUIO/guitar_acoustic_017-*.wav $SPROCKET_WAV/ACOUSTIC
