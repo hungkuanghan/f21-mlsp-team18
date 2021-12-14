@@ -1,9 +1,17 @@
-## Demo link
-https://youtu.be/x75_Z7Fwt3U
-
 ## How to setup
 ```bash
 sh setup.sh
+```
+
+## How to run approach 1 - sprocket to generate wav
+```
+python3 initialize.py -1 ACOUSTIC ELECTRONIC 16000
+# Note that you need to edit the lists in "example/list" directory. Make sure train & eval has no overlapping
+python3 initialize.py -2 ACOUSTIC ELECTRONIC 16000
+python3 initialize.py -3 ACOUSTIC ELECTRONIC 16000
+python3 run_sprocket.py -1 -2 -3 -4 -5 ACOUSTIC ELECTRONIC
+
+# The result wav is in example/data/pair/ACOUSTIC-ELECTRONIC/test/ACOUSTIC
 ```
 
 ## How to evaluate mfcc distance

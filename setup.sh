@@ -8,6 +8,13 @@ unzip nsynth-training.zip
 unzip nsynth-valid.zip
 unzip nsynth-test.zip
 
+# create necessary paths
+SPROCKET_WAV=./sprocket/example/data/wav/
+NSYNTH_ADUIO=./nsynth-train/audio
+mkdir -p $SPROCKET_WAV/{ACOUSTIC,ELECTRONIC}
+cp $NSYNTH_ADUIO/guitar_acoustic_017-*.wav $SPROCKET_WAV/ACOUSTIC
+cp $NSYNTH_ADUIO/guitar_electronic_017-*.wav $SPROCKET_WAV/ELECTRONIC
+
 # Clean up
 rm -f *.zip
 
