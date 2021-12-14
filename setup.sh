@@ -8,6 +8,9 @@ unzip nsynth-training.zip
 unzip nsynth-valid.zip
 unzip nsynth-test.zip
 
+# install sprocket
+git clone https://github.com/k2kobayashi/sprocket.git
+
 # create necessary paths
 SPROCKET_WAV=./sprocket/example/data/wav/
 NSYNTH_ADUIO=./nsynth-train/audio
